@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Field Inventory</title>
+        <style>
+        body{
+            font-family:Arial,sans-serif;
+            line-height:1.5;
+            max-width:80rem;
+            margin:auto;
+            padding:1rem;
+            color:#191919;
+        }
+        table{
+            width:100%;
+            border-collapse:collapse;
+        }
+        th,td{
+            padding:.6rem;
+            border:1px solid #999;
+            text-align:left;
+            vertical-align:top;
+        }
+        th{
+            background:#f1f1f1;
+        }
+        </style>
+        </head>
+        <body>
+            <h1>F2 · Task and Data Plan</h1>
+            <p>Duplicate rows as needed. Justify every collected value.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Full Name</td>
+                        <td>Identify the volunteer applicant.</td>
+                        <td>Yes</td>
+                        <td>Text Input (type="text")</td>
+                        <td>name</td>
+                        <td>autocomplete="name"</td>
+                        <td>Required</td>
+                        <td>Basic contact information needed for identification.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Email Address</td>
+                        <td>Send volunteer follow-up information.</td>
+                        <td>Yes</td>
+                        <td>Email Input (type="email")</td>
+                        <td>email</td>
+                        <td>autocomplete="email"</td>
+                        <td>Must be a valid email address.</td>
+                        <td>Contact information collected only for communication.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone Number</td>
+                        <td>Alternative contact method.</td>
+                        <td>Yes</td>
+                        <td>Telephone Input (type="tel")</td>
+                        <td>phone</td>
+                        <td>autocomplete="tel"</td>
+                        <td>Required</td>
+                        <td>Collected only when needed to contact volunteers.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Preferred Contact Method</td>
+                        <td>Determine how the volunteer wishes to be contacted.</td>
+                        <td>Yes</td>
+                        <td>Radio Buttons</td>
+                        <td>request_type</td>
+                        <td>N/A</td>
+                        <td>Select one option.</td>
+                        <td>Limits collection to a communication preference only.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Volunteer Interests</td>
+                        <td>Match volunteers with appropriate opportunities.</td>
+                        <td>Yes</td>
+                        <td>Select Menu</td>
+                        <td>interest</td>
+                        <td>N/A</td>
+                        <td>Must choose an option.</td>
+                        <td>Collects only information relevant to placement.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Earliest Available Date</td>
+                        <td>Determine when the volunteer can begin.</td>
+                        <td>No</td>
+                        <td>Date Input (type="date")</td>
+                        <td>available_date</td>
+                        <td>N/A</td>
+                        <td>Date cannot be before the listed minimum.</td>
+                        <td>Only availability information is collected.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hours Available Per Week</td>
+                        <td>Estimate volunteer availability.</td>
+                        <td>Yes</td>
+                        <td>Number Input (type="number")</td>
+                        <td>hours</td>
+                        <td>N/A</td>
+                        <td>Minimum 1, Maximum 40.</td>
+                        <td>Collects only scheduling information.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Volunteer Experience / Details</td>
+                        <td>Allow applicants to describe interests or experience.</td>
+                        <td>No</td>
+                        <td>Textarea</td>
+                        <td>details</td>
+                        <td>N/A</td>
+                        <td>Maximum 300 characters.</td>
+                        <td>Optional field minimizing unnecessary data collection.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Weekend Availability</td>
+                        <td>Identify additional scheduling options.</td>
+                        <td>No</td>
+                        <td>Checkbox</td>
+                        <td>weekends</td>
+                        <td>N/A</td>
+                        <td>Optional selection.</td>
+                        <td>Collects only scheduling preference.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Volunteer Guidelines Agreement</td>
+                        <td>Confirm understanding of participation expectations.</td>
+                        <td>Yes</td>
+                        <td>Checkbox</td>
+                        <td>guidelines</td>
+                        <td>N/A</td>
+                        <td>Must be checked before submission.</td>
+                        <td>Records agreement only; no additional personal information.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+        </html>

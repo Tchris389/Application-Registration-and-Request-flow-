@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Inclusive Form Flow</title><link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="page-header">
+            <p class="eyebrow">Volunteer registration</p>
+            <h1>Community volunteer form</h1>
+            <p class="lede">Register your interest in community volunteer opportunities. The form takes about 3–5 minutes to complete. After submission, 
+                a coordinator would review your information and contact you regarding available volunteer opportunities.</p>
+        </header>
+        <main>
+            <section id="expectations">
+                <h2>F1 · Purpose and Expectations</h2>
+                <p>This Community Volunteer Registration Form helps connect volunteers with local service opportunities. 
+                    The form takes approximately 3-5 minutes to complete. 
+                    After submission, a volunteer coordinator would review the information and contact applicants using their preferred method. 
+                    Fields marked Required must be completed. This prototype is for educational purposes only and uses fictional test data</p>
+            </section>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>F3 · Contact information</legend>
+                    <p class="help">Replace or extend this group based on your justified field inventory.</p>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name">
+                    </div>
+                    <div class="field">
+                        <label for="email">Email address (required)</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>F3 · Request choices</legend>
+                    <p class="help">Use an appropriate radio, checkbox, or select structure for the task.</p>
+                    <label class="choice">
+                        <input type="radio" name="request_type" value="option-a"> Email updates</label>
+                        <label class="choice"><input type="radio" name="request_type" value="option-b"> Phone updates</label>
+                        <label for = "phone">Phone number(required)</label>
+                        <input id = "phone" name = "phone" type="tel" autocomplete="tel" required>
+                    </fieldset>
+                    <div class="field">
+                        <label for="details">Request details</label>
+                        <p class="help" id="details-help">Briefly describe your volunteer interests or previous experience. Maximum 300 characters.</p>
+                        <textarea id="details" name="details" aria-describedby="details-help" maxlength="300"></textarea>
+                    </div>
+                   <div class = "field">
+                        <label for "available-date">Earliest available date</label>
+                        <input id="available-date" name="available-date" type="date" min="2026-10-01">
+                   </div>
+                   <fieldset>
+                   <legend>F3 · Volunteer Preferences</legend>
+
+                    <div class="field">
+                        <label for="interest">Volunteer Area</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Choose an option</option>
+                        <option value="events">Event Setup</option>
+                        <option value="food">Food Distribution</option>
+                        <option value="office">Office Support</option>
+                        <option value="cleanup">Community Cleanup</option>
+                    </select>
+                    </div>
+                    </fieldset>
+                    <fieldset>
+                    <legend>Volunteer Agreement</legend>
+
+                    <label class="choice">
+                        <input type="checkbox" name="weekends" value="yes" required>Available on weekends
+                    </label>
+
+                     <label class="choice">
+                         <input type="checkbox" name="guidelines" value="agreed" required> I agree to follow volunteer guidelines (required)
+                     </label>
+                    </fieldset>
+
+                    <div class="field">
+                        <label for="hours">Hours Available Per Week</label>
+                            <input id="hours" name="hours" type="number" min="1" max="40" required>
+                    </div>
+                    </fieldset>
+                    <button type="submit">Submit Volunteer Registration</button>
+                </form>
+                <textarea
+                    id="details"
+                    name="details"
+                    maxlength="300"
+                    aria-describedby="details-help"></textarea>
+                <section id="states">
+                    <h2>F5 · State and Recovery Specimen</h2>
+                    <p>Document default, focus, required, valid, invalid, disabled, and a static server-returned error. Keep this section separate from the primary blank form when necessary to avoid misleading users.</p>
+                    <div class="error-summary">
+                        <h3>There is a problem with the fictional submission</h3>
+                        <p><a href="#error-example">Email address needs attention</a></p>
+                    </div>
+                    <div class="field field-error">
+                        <label for="error-example">Email address</label>
+                        <input id="error-example" type="email" value="alex.example" aria-invalid="true" aria-describedby="error-message">
+                        <p id="error-message"><strong>Error:</strong> Enter an address in the format name@example.com.</p>
+                    </div>
+                    <button type="button" disabled>Disabled example</button>
+                </section>
+                <section id="documentation">
+                        <h2>F2 and F6 · Planning and Evidence</h2>
+
+                            <ul>
+                            <li>
+                                <strong>Field Inventory:</strong>
+                            Completed in field-inventory-template.html with one row for every form control.
+                            </li>
+                            <li>
+                                <strong>State Matrix:</strong>
+                                Documented default, focus, required, valid, invalid, disabled, and error states.
+                            </li>
+
+                            <li>
+                                <strong>Fictional Test Data:</strong>
+                                Example Name: random random<br>
+                                Example Email: random@example.com<br>
+                                Example Phone: 111-111-1111
+                            </li>
+                            <li>
+                                <strong>Test Record:</strong>
+                                Completed keyboard navigation, validation, responsive layout, zoom, and accessibility testing.
+                            </li>
+                            <li>
+                                <strong>AI Disclosure:</strong>
+                                AI assistance was used to help understand assignment requirements, brainstorm field ideas, review accessibility considerations, and suggest validation constraints. All implementation, testing, verification, and final design decisions were completed by the student.
+                            </li>
+                        </ul>
+                </section>
+            </main>
+        </body>
+        </html>
